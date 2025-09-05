@@ -91,7 +91,7 @@ int main(){
             scanf("%d",&escolha1); 
             
             printf("escolha outro atributo\n");
-            
+            //logica para nao exibir a opcao de um atributo ja escolhido
             for(int i = 1;i <= 7;i ++){
             if (i != escolha1){
                 switch (i)
@@ -121,6 +121,7 @@ int main(){
             }}
             scanf("%d",&escolha2);
 
+            //logica para finalizar o codigo com mensagem de erro caso o mesmo atributo seja selecionado duas vezes
             if(escolha1 == escolha2){
                 printf("erro voce deve escolher um atributo valido\n");
             }else{
@@ -321,7 +322,7 @@ int main(){
                     break;
                 }
 
-
+                //exibicao da pontuacao final e a carta vencedora 
                 printf("------resultado final------\n");
                 printf("carta 1: %s | ",cidade1);
                 printf("pontuacao: %d pontos\n",soma1);
@@ -377,10 +378,12 @@ int main(){
 
             break;
         case 4:
+            //regras do jogo
             printf("----REGRAS SUPERTRUNFO----\n");
             printf("1. crie duas cartas\n");
-            printf("2. a batalha compara os atributo das cartas\n");
-            printf("3. a carta com os melhores atributos vence.\n\n");
+            printf("2. selecione dois atributos para serem usados na batalha\n");
+            printf("2.1 a carta com os melhores atributos vence a rodada");
+            printf("2.2 duas rodadas de batalha com os dois atributos selecionados e o resultado sera exibido no final.\n\n");
             break;
         case 5:
             printf("saindo....");
