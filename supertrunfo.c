@@ -126,6 +126,7 @@ int main(){
                 printf("erro voce deve escolher um atributo valido\n");
             }else{
 
+                //calculo do atributo das cartas e pontuaçao por vitoria
                 printf("---atributo 1---\n");
                 switch (escolha1){
                 case 1:
